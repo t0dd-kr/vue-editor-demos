@@ -16,10 +16,6 @@ const routes = [
     path: '/toast',
     component: () => import(/* webpackChunkName: "about" */ '@/views/Toast.vue')
   },
-  {
-    path: '/tiptap',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/TipTap.vue')
-  },
 ]
 
 const router = new VueRouter({
