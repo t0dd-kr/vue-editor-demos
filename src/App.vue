@@ -1,32 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
-}
+
+  #app {
+    display: inline-block;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .quill-editor {
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .ql-container {
+    flex: 1;
+  }
 </style>
